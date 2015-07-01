@@ -20,3 +20,5 @@ mesos_zookeeper_masters: "zk://{{ zookeeper_hostnames }}/mesos"
 # Containerizer
 mesos_containerizers: "mesos"
 mesos_executor_timeout: "5mins"
+
+codename: "{{ansible_distribution_release|lower}}"
