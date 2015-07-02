@@ -21,5 +21,4 @@ mesos_zookeeper_masters: "zk://{{ zookeeper_hostnames }}/mesos"
 mesos_containerizers: "mesos"
 mesos_executor_timeout: "5mins"
 
-debian_codename: "{{ansible_distribution_release|lower}}"
 debian_package_version: "{{mesos_version}}-1.0.{{ansible_distribution|lower}}{{ansible_distribution_version.split('.')|join('')}}"
